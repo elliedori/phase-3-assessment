@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'pets#index'
 
+  get '/home', to: 'pets#index'
+
   resources :pets, only: [:index, :show] do
     resources :toys, only: [:index, :show]
   end
