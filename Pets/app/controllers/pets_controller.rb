@@ -6,8 +6,8 @@ class PetsController < ApplicationController
 
   def show
     @pet = Pet.find(params[:id])
-    @toys = @pet.toys
     if request.xhr?
+      @toys = @pet.toys
       render partial: 'toys'
     end
   end

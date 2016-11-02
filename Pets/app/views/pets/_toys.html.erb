@@ -1,4 +1,5 @@
-<% @toys.each do |toy| %>
-  <%= toy.description %>
-<% end %>
-
+<ul>
+  <% @toys.each do |toy| %>
+    <li><%= toy.description %></li>
+  <% end %>
+</ul>
