@@ -15,6 +15,7 @@ class ToysController < ApplicationController
   end
 
   def update
+
   end
 
   def destroy
