@@ -1,0 +1,3 @@
+<% @toys.each do |toy| %>
+  <p><%= link_to toy.description, pet_toy_url(@pet, toy) %></p>
+<% end %>
