@@ -1,0 +1,5 @@
+<h3><%= @toy.description %></h3>
+
+  <p>Belongs to: <%= link_to @pet.name, pet_path(@pet) %></p>
+  <%= link_to "Edit", edit_pet_toy_path(@pet, @toy) %>
+  <%= link_to "Delete", pet_toy_path(@pet, @toy), method: 'delete' %>
